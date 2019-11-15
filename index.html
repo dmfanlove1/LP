@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Vue LP</title>
+    <script src="./js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="band in bands">
+            name: {{band.name}} age: {{band.age}}
+            </li>
+        </ul>
+        <input type="text" placeholder="Nhap text">
+        <a href="http://zing.vn">Click here</a>
+    </div>
+
+    <form>
+        <input type="button" value="click here">
+    </form>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                bands: [
+                    { name: "Trung", age: "29" },
+                    { name: "Ngan", age: "27" },
+                    { name: "Bella", age: "3" },
+                    { name: "Peppa", age: "1" },
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
